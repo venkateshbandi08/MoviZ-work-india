@@ -1,0 +1,34 @@
+@import "../../mixins.scss";
+
+.upcomingPage {
+  padding: 0px 20px;
+
+  .moviesDataContainer {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      width: 30%;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      .movieCard {
+        width: 100%;
+      }
+
+      @include md {
+        width: 20%;
+      }
+    }
+  }
+
+  h1 {
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
